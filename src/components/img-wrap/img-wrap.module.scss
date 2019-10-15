@@ -1,0 +1,80 @@
+.imageWrap {
+    position: relative;
+    background-color: #f4f4f4;
+    > .frame {
+        &,
+        * {
+            box-sizing: border-box;
+        }
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 100%;
+        > div {
+            margin-top: -100%;
+        }
+    }
+    > .content {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        > .image {
+            width: 100%;
+            &.placeholder {
+                max-width: 100%;
+            }
+            &.trueImg {
+                max-width: 100%;
+            }
+        }
+        > .errorIcon {
+            font-family: "WebApp" !important;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+            font-size: 50px;
+            color: #d8d8d8;
+        }
+        > * {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: none !important;
+        }
+    }
+    &.empty {
+        > .content > .placeholder {
+            display: block !important;
+            position: relative;
+            left: 0;
+            top: 0;
+            transform: none;
+        }
+    }
+    &.pending {
+        > .content > .loading {
+            display: block !important;
+        }
+    }
+    &.error {
+        > .content > .errorIcon {
+            display: block !important;
+        }
+    }
+    &.succ {
+        > .content > .trueImg {
+            display: block !important;
+            position: relative;
+            //left: 0;
+            //top: 0;
+            //transform: none;
+        }
+    }
+}

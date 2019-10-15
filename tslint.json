@@ -1,0 +1,56 @@
+{
+    "defaultSeverity": "warning",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "linterOptions": {
+        "exclude": [
+            "node_modules/**"
+        ]
+    },
+    "allowJs": true,
+    "rules": {
+        "arrow-parens": false,
+        "trailing-comma": false,
+        "quotemark": [true],
+        "indent": [true, "spaces", 4],
+        "interface-name": false,
+        "ordered-imports": false,
+        "object-literal-sort-keys": false,
+        "no-console": false,
+        "no-debugger": false,
+        "no-unused-expression": [true, "allow-fast-null-checks"],
+        "no-unused-variable": false,
+        "triple-equals": true,
+        "no-parameter-reassignment": true,
+        "no-conditional-assignment": true,
+        "no-construct": true,
+        "no-duplicate-super": true,
+        "no-duplicate-switch-case": true,
+        "no-object-literal-type-assertion": true,
+        "no-return-await": true,
+        "no-sparse-arrays": true,
+        "no-string-throw": true,
+        "no-switch-case-fall-through": true,
+        "prefer-object-spread": true,
+        "radix": true,
+        "cyclomatic-complexity": [
+            true,
+            20
+        ],
+        "member-access": false,
+        "deprecation": false,
+        "use-isnan": true,
+        "no-duplicate-imports": true,
+        "no-mergeable-namespace": true,
+        "encoding": true,
+        "import-spacing": true,
+        "interface-over-type-literal": true,
+        "new-parens": true,
+        "no-angle-bracket-type-assertion": true,
+        "no-consecutive-blank-lines": [
+            true,
+            3
+        ]
+    }
+}

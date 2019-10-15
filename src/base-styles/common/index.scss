@@ -1,0 +1,37 @@
+.van-toast {
+    text-align: center;
+}
+
+.van-tag--round::after {
+    border-radius: 2rem !important;
+}
+
+.van-hairline--surround::after {
+    border-width: 2px;
+}
+
+.van-sku__goods-name {
+    font-size: unset !important;
+}
+
+.van-actionsheet {
+    display: flex;
+    max-height: 50% !important;
+    flex-direction: column;
+
+    &__content {
+        flex: 1;
+        overflow: auto;
+    }
+}
+
+.tabs-wrap {
+    .van-tabs__wrap {
+        top: 54px !important;
+        position: fixed;
+    }
+}
+
+.van-loading--circular {
+    color: #ff0f1f !important;
+}

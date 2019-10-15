@@ -1,0 +1,38 @@
+.login {
+    height: 100%;
+    background: $white;
+}
+
+.logo {
+    width: 40vw;
+    margin: 80px auto 60px;
+    display: block;
+    background: transparent;
+}
+
+.register {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 32px;
+    color: #a8a8a8;
+}
+
+.field {
+    padding: 30px 30px;
+    height: auto;
+    min-height: 102px;
+}
+
+.forget-pass {
+    line-height: 17px;
+    height: 26px;
+    color: $text_color;
+}
+
+.none-border {
+    border-left: 1px solid rgba(216, 216, 216, 1);
+    padding-right: 20px;
+    display: inline-block;
+    height: inherit;
+    vertical-align: middle;
+}

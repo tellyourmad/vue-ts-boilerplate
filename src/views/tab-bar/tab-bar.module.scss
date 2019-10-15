@@ -1,0 +1,19 @@
+.tab-item {
+    display: flex;
+    flex-wrap: wrap;
+
+    >div {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .icon-svg  {
+        margin-bottom: 9px;
+        > svg {
+            width: 42px;
+            height: 42px;
+        }
+    }
+}
